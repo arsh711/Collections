@@ -34,7 +34,6 @@ public class JavaCollections {
         list2.addElement("Rat");
         list2.addElement("Cat");
         list2.addElement("Deer");
-        list2.addElement("Rat");
 
         System.out.println("Elements are: "+list2);
 
@@ -44,13 +43,12 @@ public class JavaCollections {
         stk.push(113);
         stk.push(90);
         stk.push(120);
-//        stk.push();
         System.out.println("Elements in Stack: " + stk);
         stk.pop();
         System.out.println("Element after pop in stack" +stk);
 
         System.out.println("\t\nHashset\n");
-        Set<String> set=new HashSet();
+        HashSet<String> set=new HashSet();
         set.add("One");
         set.add("Two");
         set.add("Three");
@@ -63,7 +61,7 @@ public class JavaCollections {
         }
 
         System.out.println("\t\nLinkedHashset\n");
-        Set<String> set1=new LinkedHashSet<String>();
+        LinkedHashSet<String> set1=new LinkedHashSet<String>();
         set1.add("One");
         set1.add("Two");
         set1.add("Three");
@@ -77,7 +75,7 @@ public class JavaCollections {
         }
 
         System.out.println("\t\nTreeset\n");
-        Set<String> al=new TreeSet<String>();
+        TreeSet<String> al=new TreeSet<String>();
         al.add("Ravi");
         al.add("Vijay");
         al.add("Ravi");
@@ -89,7 +87,7 @@ public class JavaCollections {
         }
 
         System.out.println("\t\nQueue - PriorityQueue\n");
-        Queue<String> queue=new PriorityQueue<String>();
+        PriorityQueue<String> queue=new PriorityQueue<String>();
         queue.add("Amit");
         queue.add("Vijay");
         queue.add("Karan");
@@ -117,37 +115,6 @@ public class JavaCollections {
         deque.add("Ajay");
         for (String str : deque) {
             System.out.println(str);
-        }
-
-        System.out.println("\n\tHashMap\n");
-        Map<Integer,String> map= new HashMap<>();
-        map.put(1,"Amit");
-        map.put(5,"Rahul");
-        map.put(2,"Jai");
-        map.put(6,"Amit");
-        //Traversing Map
-        for(Map.Entry m:map.entrySet()){
-            System.out.println(m.getKey()+" "+m.getValue());
-        }
-
-        System.out.println("\n\tLinkedHashMap\n");
-        LinkedHashMap<Integer, String> linkedHashMap = new LinkedHashMap<Integer, String>();
-        linkedHashMap.put(100,"Amit");
-        linkedHashMap.put(101,"Vijay");
-        linkedHashMap.put(102,"Rahul");
-        System.out.println("Keys: "+linkedHashMap.keySet());
-        System.out.println("Values: "+linkedHashMap.values());
-        System.out.println("Key-Value pairs: "+linkedHashMap.entrySet());
-
-        System.out.println("\n\tTreeMap\n");
-        TreeMap<Integer,String> treeMap=new TreeMap<Integer,String>();
-        treeMap.put(100,"Amit");
-        treeMap.put(101,"Ravi");
-        treeMap.put(103,"Vijay");
-        treeMap.put(102,"Rahul");
-
-        for(Map.Entry m:treeMap.entrySet()){
-            System.out.println(m.getKey()+" "+m.getValue());
         }
     }
 }
