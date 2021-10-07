@@ -4,6 +4,7 @@ import java.util.*;
 
 public class JavaCollections {
     public static void main(String[] args) {
+        //amrit added this file fot practice
         //collections basically have list, set, queue, deque, map
         //list have three subclasses
         System.out.println("\t\nArrayList\n");
